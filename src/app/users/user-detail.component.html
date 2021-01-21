@@ -1,0 +1,38 @@
+<h2>Please fill the details & opt for desired course</h2>
+<form [formGroup]="userForm">
+    <label for=fn>FullName:
+        <input type="text" name="fn" formControlName="fullName" placeholder="Your Full Name..">
+    </label>
+    <br><br>
+
+    <label for="mobno"> Mobile Number:
+        <input type="mob" type="number" name="mobno" placeholder="7709.." formControlName="mobileNo">
+    </label>
+    <br><br>
+
+    <label for="desc">Description: </label>
+    <br><br>
+    <textarea maxlength="250" name="desc" style="width:70%" placeholder="Ex. I am choosing this course because..."
+        formControlName="description"></textarea>
+
+    <br><br>
+
+    <label for="gender">Select Gender:
+        <label><input type="radio" name="gender" value="male" formControlName="gender">Male</label>
+        <label><input type="radio" name="gender" value="Female" formControlName="gender">Female</label>
+        <label><input type="radio" name="gender" value="other" formControlName="gender">Other</label>
+    </label>
+    <br><br>
+
+    <label>Choose Course:</label>
+    <select formControlName="selectedCourse">
+        <option>Javascript</option>
+        <option>HTML</option>
+        <option>CSS</option>
+        <option>Angular</option>
+    </select>
+    <br><br>
+
+    <button (click)="sumbitForm()">Submit</button>
+
+</form>

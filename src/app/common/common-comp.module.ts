@@ -1,6 +1,6 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
-import { BrowserModule } from "@angular/platform-browser";
+import { ConfirmationComponent } from "./confirmation-page/confirmation.component";
 import { HeaderComponent } from "./header/header.component";
 
 @NgModule({
